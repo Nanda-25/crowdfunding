@@ -1,22 +1,21 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
 import PledgeForm from "../components/PledgeForm/PledgeForm";
-
 // import './ProjectPage.css';
 
 function ProjectPage() {
 
 //State
-const [projectData, setProjectData] = useState({pledges: []})
-const [user, setUser] = useState();
+const [projectData, setProject] = useState({pledges: []})
+// const [user, setUser] = useState();
 
 //Hooks
 const { id }  = useParams();
 
 //Effects
 useEffect(() => {
-    fetch(`${import.meta.env.VITE_API_URL}projects/${id}`)
-        .then((results) => {
+    fetch(`${import.meta.env.VITE_API_URL
+        }projects/${id}`).then((results) => {
             return results.json();
         })
         .then((data) => {
@@ -24,7 +23,7 @@ useEffect(() => {
         });
 }, []);
 
-getUser()
+// getUser()
 
     return (
         <div>

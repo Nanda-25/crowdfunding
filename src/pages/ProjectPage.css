@@ -1,8 +1,15 @@
 p {
     margin: 20px;
 }
+ul {
+    justify-content: center;
+}
+
+li {
+    width: 600px;
+}
 
 #donate-btn {
-    background-color: var(--yellow);
-    border: 1px solid var(--yellow);
+    background-color: var(--blue);
+    border: 1px solid var(--blue);
 }

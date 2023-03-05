@@ -5,21 +5,19 @@ import { useState, useEffect } from "react";
 // Components
 import ProjectCard from "../components/ProjectCard/ProjectCard";
 
-
 function HomePage() {
     // State
     const [projectList, setProjectList] = useState([]);
-    const [pledgeList, setPledgeList] = useState([]);
 
     // Project Data
     useEffect(() => {
-        fetch(`${import.meta.env.VITE_API_URL}projects`)
-        .then((results) => {
-            return results.json();
-        })
-        .then((data) => {
-            setProjectList(data);
-        });
+        fetch(`${import.meta.env.VITE_API_URL}projects/`)
+            .then((results) => {
+                return results.json();
+            })
+            .then((data) => {
+                setProjectList(data);
+            });
     }, []);
 
 // Pledge Data

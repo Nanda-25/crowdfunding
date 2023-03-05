@@ -1,0 +1,30 @@
+nav {
+    background-color: var(--blue);
+    height: 250px;
+}
+
+.login-btn {
+    max-width: 120px;
+}
+
+#logo img {
+    height: 165px;
+    margin: 20px auto;
+}
+
+#nav-right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+#nav-controls {
+    display: flex;
+}
+
+.nav-link {
+    justify-content: center;
+    padding: 10px;
+}
+   

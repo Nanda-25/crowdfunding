@@ -23,7 +23,7 @@ return (
             <input 
                 type="password" 
                 id="password" 
-            // onChange={handleChange} placeholder="Password" 
+                placeholder="Password" 
             />
         </div>
         <button type="submit" className="btn">

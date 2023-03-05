@@ -21,7 +21,7 @@ function PledgePage() {
         <div className="page-container">
             <h2>Donate today!</h2>
             <PledgeForm />
-            <p>test comment</p>
+            <p>Help change many lifes</p>
         </div>
     )
 }

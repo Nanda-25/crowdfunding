@@ -11,7 +11,7 @@ function LoginForm() {
     });
 
     //Hooks
-const navigate = useNavigate();
+    const navigate = useNavigate();
 
     //Actions
     const handleChange = (event) => {
