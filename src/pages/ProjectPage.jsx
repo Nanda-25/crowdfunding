@@ -1,12 +1,16 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
-import './ProjectPage.css';
+import PledgeForm from "../components/PledgeForm/PledgeForm";
+
+// import './ProjectPage.css';
 
 function ProjectPage() {
-    //State
-const [projectData, setProjectData] = useState({pledges: []})
-//Hooks
 
+//State
+const [projectData, setProjectData] = useState({pledges: []})
+const [user, setUser] = useState();
+
+//Hooks
 const { id }  = useParams();
 
 //Effects
@@ -19,6 +23,8 @@ useEffect(() => {
             setProject(data);
         });
 }, []);
+
+getUser()
 
     return (
         <div>

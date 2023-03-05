@@ -5,7 +5,7 @@ function LoginForm() {
     const [, setLoggedIn] = useOutletContext();
 
     //State
-    const [credentials, setCredentials] = useState({
+    const [credentials, setCredentials] = useState ({
         username: "",
         password: "",
     });
@@ -52,7 +52,7 @@ const navigate = useNavigate();
     };
 
     return (
-        <div className="form-container">
+        <section>
             <form onSubmit={handleSubmit}>
                 <div>
                     <label htmlFor="username">Username:</label>
@@ -76,7 +76,7 @@ const navigate = useNavigate();
                     Login
                 </button>
             </form>
-        </div>
+        </section>
     );
 }
 

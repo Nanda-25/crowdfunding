@@ -22,14 +22,13 @@ const HeaderLayout = () => {
     <>
       <Nav loggedIn={loggedIn} setLoggedIn={setLoggedIn} />
       <Outlet context={[loggedIn, setLoggedIn]} />
-      <Footer />
     </>
   );
 };
 
 const router = createBrowserRouter([
   {
-    element: <Layout />,
+    element: <HeaderLayout />,
     children: [
       { path: "/", element: <HomePage /> },
       { path: "/donate", element: <PledgePage /> },
