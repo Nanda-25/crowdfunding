@@ -12,7 +12,7 @@ function Nav(props) {
     return (
         <nav>
             <div id="logo">
-                <img src="../src/images/logo_Istudy.png" alt="logo_Istudy" />
+                <img src="../src/assets/images/logo_Istudy.png" alt="logo_Istudy" />
             </div>
             <div id="nav-right">
                 {!loggedIn && <Link to="/login" className="btn">Log In</Link>}
