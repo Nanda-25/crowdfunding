@@ -56,13 +56,6 @@ function PledgeForm() {
                     />
                 </div>
                 <div>
-                    <label htmlFor="password">Password:</label>
-                    <input
-                        type="password"
-                        id="password"
-                        onChange={handleChange}
-                        placeholder="Password"
-                    />
                     <label htmlFor="project">Choose a project:</label>
                     <select id="project" name="project">
                     </select>
