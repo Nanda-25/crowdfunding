@@ -1,0 +1,8 @@
+p {
+    margin: 20px;
+}
+
+#donate-btn {
+    background-color: var(--yellow);
+    border: 1px solid var(--yellow);
+}

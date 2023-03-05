@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { useParams } from "react-router-dom";
+import './ProjectPage.css';
 
 function ProjectPage() {
     //State
@@ -12,7 +13,10 @@ const { id }  = useParams();
 useEffect(() => {
     fetch(`${import.meta.env.VITE_API_URL}projects/${id}`)
         .then((results) => {
-                setProjectData(data);
+            return results.json();
+        })
+        .then((data) => {
+            setProject(data);
         });
 }, []);
 

@@ -1,19 +1,20 @@
 import { useState } from "react";
-import { useNavigate, useOutletContext} from "react-router-dom"; 
+import { useNavigate, useOutletContext } from "react-router-dom";
+// Form styling globally
 
-function LoginForm() {
+function PledgeForm() {
     const [, setLoggedIn] = useOutletContext();
 
-    //State
+    // State
     const [credentials, setCredentials] = useState({
         username: "",
         password: "",
     });
 
     //Hooks
-const navigate = useNavigate();
+    const navigate = useNavigate();
 
-    //Actions
+    // Actions
     const handleChange = (event) => {
         const { id, value } = event.target;
 
@@ -21,7 +22,7 @@ const navigate = useNavigate();
             ...prevCredentials,
             [id]: value,
         }));
-    };
+    }
 
     const postData = async () => {
         const response = await fetch(
@@ -80,11 +81,4 @@ const navigate = useNavigate();
     );
 }
 
-export default LoginForm;
-
-
-
-
-
-
-
+export default PledgeForm;
